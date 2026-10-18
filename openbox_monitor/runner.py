@@ -70,9 +70,18 @@ def load_config(path: Optional[str]) -> dict:
                 cfg[key].update(value)
             else:
                 cfg[key] = value
-    env_hook = os.environ.get("DISCORD_WEBHOOK_URL")
-    if env_hook:
-        cfg["discord_webhook"] = env_hook
+    # Deployment values override checked-in, non-secret configuration.
+    for env_name, key in {
+        "DISCORD_WEBHOOK_URL": "discord_webhook",
+        "OPENBOX_DATABASE": "database",
+        "BESTBUY_ZIP_CODE": "zip_code",
+        "DISCORD_MENTION": "discord_mention",
+    }.items():
+        value = os.environ.get(env_name)
+        if value is not None:
+            cfg[key] = value
+    if not cfg["database"]:
+        raise ValueError("database path must not be empty")
     return cfg
 
 

@@ -8,6 +8,9 @@ Alienware Area-51 18 / RTX 5090 / 64GB landing at **$2,234.99 against $5,949.99
 
 **Shipping only.** Pickup-only open-box stock is detected and discarded.
 
+**Railway deployment:** see [RAILWAY.md](RAILWAY.md) for worker settings,
+persistent SQLite storage, environment variables, and a laptop-focused profile.
+
 ---
 
 ## 1. What this is actually looking for

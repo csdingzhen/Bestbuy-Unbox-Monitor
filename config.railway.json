@@ -1,0 +1,16 @@
+{
+  "database": "openbox.db",
+  "requests_per_second": 2.0,
+  "workers": 4,
+  "cycle_seconds": 60,
+  "max_skus_per_cycle": 400,
+  "discovery_interval_seconds": 3600,
+  "discovery_pages_per_source": 3,
+  "discovery_sources": [
+    "https://www.bestbuy.com/site/searchpage.jsp?st=laptop",
+    "https://www.bestbuy.com/site/computers-pcs/gaming-laptops/abcat0502001.c?id=abcat0502001",
+    "https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5090+gaming+laptop",
+    "https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5080+gaming+laptop",
+    "https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5070+ti+gaming+laptop"
+  ]
+}
