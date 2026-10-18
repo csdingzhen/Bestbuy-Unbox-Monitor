@@ -1,0 +1,35 @@
+{
+  "database": "openbox.db",
+
+  "discord_webhook": "",
+  "discord_mention": "",
+
+  "zip_code": "",
+
+  "requests_per_second": 3.0,
+  "workers": 6,
+  "cycle_seconds": 60,
+  "max_skus_per_cycle": 400,
+  "alert_cooldown_seconds": 21600,
+
+  "discovery_interval_seconds": 3600,
+  "discovery_pages_per_source": 3,
+  "discovery_sources": [],
+
+  "intervals": {
+    "hot": 120,
+    "warm": 600,
+    "cold": 1800,
+    "hot_floor": 1500,
+    "warm_floor": 600
+  },
+
+  "thresholds": {
+    "alert_pct": 35.0,
+    "strong_pct": 45.0,
+    "ladder_gap_pct": 8.0,
+    "price_drop_pct": 10.0,
+    "min_new_price": 400.0,
+    "min_dollars_off": 150.0
+  }
+}

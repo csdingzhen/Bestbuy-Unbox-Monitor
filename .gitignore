@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.db
+config.json
+test-config.json
